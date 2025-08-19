@@ -95,7 +95,7 @@ echo "Após aumento:<br>";
 $Funcionario->exibeDados();
 echo "<hr>";
 
-$Assistente = new Assistente_Tecnico("Carlos", 2800, "T456", 200);
+$Assistente = new Assistente("Carlos", 2800, "T456");
 echo "<br>Assistente:<br>";
 $Assistente->exibeDados();
 $Assistente->addAumento(300);
@@ -113,6 +113,7 @@ $Assistente_Administrativo = new Assistente_Administrativo("Ana", 2600, "AD789",
 echo "<br>Assistente Administrativo:<br>";
 $Assistente_Administrativo->exibeDados();
 echo "Ganho Anual com turno extra: " . $Assistente_Administrativo->ganhoAnual() . "<br>";
+
 
 
 
